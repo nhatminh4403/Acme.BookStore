@@ -1585,3 +1585,764 @@
 2025-04-13 00:13:04.275 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_content/Blazorise/vendors/floating-ui-core.js - null null
 2025-04-13 00:13:04.277 +07:00 [INF] Sending file. Request path: '/_content/Blazorise/vendors/floating-ui-core.js'. Physical path: 'C:\Users\ADmin\.nuget\packages\blazorise\1.6.2\staticwebassets\vendors\floating-ui-core.js'
 2025-04-13 00:13:04.277 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_content/Blazorise/vendors/floating-ui-core.js - 200 15103 application/javascript 1.2348ms
+2025-04-13 00:19:29.822 +07:00 [INF] Starting web host.
+2025-04-13 00:19:30.420 +07:00 [INF] Loaded ABP modules:
+2025-04-13 00:19:30.420 +07:00 [INF] - Acme.BookStore.Blazor.BookStoreBlazorModule
+2025-04-13 00:19:30.420 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-04-13 00:19:30.420 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-04-13 00:19:30.420 +07:00 [INF]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-04-13 00:19:30.420 +07:00 [INF]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-04-13 00:19:30.420 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-04-13 00:19:30.420 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-04-13 00:19:30.420 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-04-13 00:19:30.420 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-04-13 00:19:30.420 +07:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Data.AbpDataModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-04-13 00:19:30.420 +07:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-04-13 00:19:30.420 +07:00 [INF]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]                   - Volo.Abp.Timing.AbpTimingModule
+2025-04-13 00:19:30.420 +07:00 [INF]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-04-13 00:19:30.420 +07:00 [INF]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-04-13 00:19:30.420 +07:00 [INF]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-04-13 00:19:30.420 +07:00 [INF]                         - Volo.Abp.Security.AbpSecurityModule
+2025-04-13 00:19:30.420 +07:00 [INF]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-04-13 00:19:30.420 +07:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2025-04-13 00:19:30.420 +07:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-04-13 00:19:30.420 +07:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2025-04-13 00:19:30.420 +07:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-04-13 00:19:30.420 +07:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-04-13 00:19:30.420 +07:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2025-04-13 00:19:30.644 +07:00 [INF] User profile is available. Using 'C:\Users\ADmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-13 00:19:30.910 +07:00 [WRN] Mapped static asset endpoints not found. Ensure 'MapStaticAssets' is called before 'AddInteractiveWebAssemblyRenderMode'.
+2025-04-13 00:19:31.033 +07:00 [INF] Initialized all ABP modules.
+2025-04-13 00:19:31.119 +07:00 [INF] Now listening on: https://localhost:44302
+2025-04-13 00:19:31.151 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-13 00:19:31.151 +07:00 [INF] Hosting environment: Development
+2025-04-13 00:19:31.151 +07:00 [INF] Content root path: E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor
+2025-04-13 00:19:31.743 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/books - null null
+2025-04-13 00:19:31.804 +07:00 [INF] Executing endpoint '/books (/books)'
+2025-04-13 00:19:31.855 +07:00 [INF] Executed endpoint '/books (/books)'
+2025-04-13 00:19:31.859 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/books - 200 null text/html; charset=utf-8 116.2409ms
+2025-04-13 00:19:31.878 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:19:31.884 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-04-13 00:19:31.884 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/main.css - null null
+2025-04-13 00:19:31.886 +07:00 [INF] The file /main.css was not modified
+2025-04-13 00:19:31.886 +07:00 [INF] The file /Acme.BookStore.Blazor.Client.styles.css was not modified
+2025-04-13 00:19:31.886 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - 304 null text/css 2.2728ms
+2025-04-13 00:19:31.886 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/main.css - 304 null text/css 2.2728ms
+2025-04-13 00:19:31.906 +07:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'N/A'
+2025-04-13 00:19:31.908 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 200 701711 text/css 29.7282ms
+2025-04-13 00:19:31.908 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:19:31.912 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:19:31.912 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:19:31.913 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:19:31.913 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 4.8618ms
+2025-04-13 00:19:31.916 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:19:31.923 +07:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'N/A'
+2025-04-13 00:19:31.924 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 200 677686 application/javascript 7.1669ms
+2025-04-13 00:19:31.940 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-13 00:19:31.940 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:19:31.943 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 3.5539ms
+2025-04-13 00:19:31.967 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.1313ms
+2025-04-13 00:19:31.989 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - null null
+2025-04-13 00:19:31.998 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/favicon.ico - null null
+2025-04-13 00:19:31.999 +07:00 [INF] The file /favicon.ico was not modified
+2025-04-13 00:19:31.999 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/favicon.ico - 304 null image/x-icon 0.8293ms
+2025-04-13 00:19:32.011 +07:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-04-13 00:19:32.011 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - 200 70285 application/json 22.7517ms
+2025-04-13 00:19:32.029 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.HttpApi.Client.ht7mgrct4s.pdb - null null
+2025-04-13 00:19:32.029 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/appsettings.json - null null
+2025-04-13 00:19:32.029 +07:00 [INF] The file /appsettings.json was not modified
+2025-04-13 00:19:32.029 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/appsettings.json - 304 null application/json 0.4637ms
+2025-04-13 00:19:32.030 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.049 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Application.Contracts.m1v3y3eors.pdb - null null
+2025-04-13 00:19:32.049 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.i49xxty80o.pdb - null null
+2025-04-13 00:19:32.049 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.igmu29amlr.pdb - null null
+2025-04-13 00:19:32.050 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.050 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.050 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.063 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.HttpApi.Client.ht7mgrct4s.pdb.gz'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\obj\Debug\net9.0\compressed\4lso9ic649-ht7mgrct4s.gz'
+2025-04-13 00:19:32.066 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.066 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.HttpApi.Client.ht7mgrct4s.pdb.gz - 200 10189 application/octet-stream 37.526ms
+2025-04-13 00:19:32.068 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Domain.Shared.igmu29amlr.pdb.gz'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\obj\Debug\net9.0\compressed\hn8147371o-igmu29amlr.gz'
+2025-04-13 00:19:32.068 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.068 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.igmu29amlr.pdb.gz - 200 9829 application/octet-stream 19.0027ms
+2025-04-13 00:19:32.068 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Blazor.Client.i49xxty80o.pdb.gz'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\obj\Debug\net9.0\compressed\qoe0p70cxu-i49xxty80o.gz'
+2025-04-13 00:19:32.068 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.069 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Application.Contracts.m1v3y3eors.pdb.gz'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\obj\Debug\net9.0\compressed\34xbh2ojso-m1v3y3eors.gz'
+2025-04-13 00:19:32.069 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.i49xxty80o.pdb.gz - 200 27715 application/octet-stream 19.3159ms
+2025-04-13 00:19:32.069 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:19:32.069 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Application.Contracts.m1v3y3eors.pdb.gz - 200 10409 application/octet-stream 19.5326ms
+2025-04-13 00:19:32.148 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.beefwtf1so.wasm - null null
+2025-04-13 00:19:32.148 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Application.Contracts.yhdh0qzyi5.wasm - null null
+2025-04-13 00:19:32.148 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.HttpApi.Client.5m9257s78b.wasm - null null
+2025-04-13 00:19:32.148 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.oe5be0sghs.wasm - null null
+2025-04-13 00:19:32.162 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Application.Contracts.yhdh0qzyi5.wasm'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\Acme.BookStore.Application.Contracts.yhdh0qzyi5.wasm'
+2025-04-13 00:19:32.162 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Application.Contracts.yhdh0qzyi5.wasm - 200 11541 application/wasm 14.0985ms
+2025-04-13 00:19:32.162 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.HttpApi.Client.5m9257s78b.wasm'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\Acme.BookStore.HttpApi.Client.5m9257s78b.wasm'
+2025-04-13 00:19:32.162 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.HttpApi.Client.5m9257s78b.wasm - 200 7957 application/wasm 14.2853ms
+2025-04-13 00:19:32.162 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Domain.Shared.oe5be0sghs.wasm'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\Acme.BookStore.Domain.Shared.oe5be0sghs.wasm'
+2025-04-13 00:19:32.162 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.oe5be0sghs.wasm - 200 44821 application/wasm 14.4341ms
+2025-04-13 00:19:32.163 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Blazor.Client.beefwtf1so.wasm'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\Acme.BookStore.Blazor.Client.beefwtf1so.wasm'
+2025-04-13 00:19:32.163 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.beefwtf1so.wasm - 200 69909 application/wasm 14.7469ms
+2025-04-13 00:19:34.157 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/authentication/login-callback?code=_L8ii7SKwccoMupUdQ2rtRRu9sCeck9V5SxgQ-MybTA&state=7d8a53e6022b4844bd06360d03627513&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - null null
+2025-04-13 00:19:34.169 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:19:34.172 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:19:34.172 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/authentication/login-callback?code=_L8ii7SKwccoMupUdQ2rtRRu9sCeck9V5SxgQ-MybTA&state=7d8a53e6022b4844bd06360d03627513&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 15.3052ms
+2025-04-13 00:19:34.180 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:19:34.180 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:19:34.180 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:19:34.180 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.7776ms
+2025-04-13 00:19:34.186 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:19:34.186 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:19:34.186 +07:00 [INF] The file /global.js was not modified
+2025-04-13 00:19:34.187 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:19:34.187 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 304 null application/javascript 0.4803ms
+2025-04-13 00:19:34.187 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:19:34.187 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 7.2246ms
+2025-04-13 00:19:34.198 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:19:34.205 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.4523ms
+2025-04-13 00:19:34.335 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - null null
+2025-04-13 00:19:34.335 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - 200 799 application/javascript; charset=utf-8 0.223ms
+2025-04-13 00:19:34.340 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - null null
+2025-04-13 00:19:34.341 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - 204 null null 1.1128ms
+2025-04-13 00:19:35.164 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - null null
+2025-04-13 00:19:35.164 +07:00 [INF] The file /images/logo/leptonx-lite/logo-light.png was not modified
+2025-04-13 00:19:35.164 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - 304 null image/png 0.6361ms
+2025-04-13 00:19:35.802 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:19:35.802 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:19:35.802 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.5188ms
+2025-04-13 00:19:59.981 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_content/Blazorise.Bootstrap5/tooltip.js?v=1.6.2.0 - null null
+2025-04-13 00:19:59.982 +07:00 [INF] Sending file. Request path: '/_content/Blazorise.Bootstrap5/tooltip.js'. Physical path: 'C:\Users\ADmin\.nuget\packages\blazorise.bootstrap5\1.6.2\staticwebassets\tooltip.js'
+2025-04-13 00:19:59.982 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_content/Blazorise.Bootstrap5/tooltip.js?v=1.6.2.0 - 200 421 application/javascript 1.22ms
+2025-04-13 00:20:00.038 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_content/Blazorise/tooltip.js?v=1.6.2.0 - null null
+2025-04-13 00:20:00.044 +07:00 [INF] Sending file. Request path: '/_content/Blazorise/tooltip.js'. Physical path: 'C:\Users\ADmin\.nuget\packages\blazorise\1.6.2\staticwebassets\tooltip.js'
+2025-04-13 00:20:00.044 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_content/Blazorise/tooltip.js?v=1.6.2.0 - 200 54102 application/javascript 5.6699ms
+2025-04-13 00:20:20.285 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_content/Blazorise/closable.js?v=1.6.2.0 - null null
+2025-04-13 00:20:20.286 +07:00 [INF] Sending file. Request path: '/_content/Blazorise/closable.js'. Physical path: 'C:\Users\ADmin\.nuget\packages\blazorise\1.6.2\staticwebassets\closable.js'
+2025-04-13 00:20:20.287 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_content/Blazorise/closable.js?v=1.6.2.0 - 200 5188 application/javascript 1.5136ms
+2025-04-13 00:20:22.076 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_content/Blazorise.Bootstrap5/modal.js?v=1.6.2.0 - null null
+2025-04-13 00:20:22.077 +07:00 [INF] Sending file. Request path: '/_content/Blazorise.Bootstrap5/modal.js'. Physical path: 'C:\Users\ADmin\.nuget\packages\blazorise.bootstrap5\1.6.2\staticwebassets\modal.js'
+2025-04-13 00:20:22.077 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_content/Blazorise.Bootstrap5/modal.js?v=1.6.2.0 - 200 3939 application/javascript 0.999ms
+2025-04-13 00:21:43.951 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/bg-01.png - null null
+2025-04-13 00:21:43.951 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-blog.png - null null
+2025-04-13 00:21:43.951 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-support.png - null null
+2025-04-13 00:21:43.952 +07:00 [INF] The file /images/getting-started/bg-01.png was not modified
+2025-04-13 00:21:43.952 +07:00 [INF] The file /images/getting-started/img-support.png was not modified
+2025-04-13 00:21:43.952 +07:00 [INF] The file /images/getting-started/img-blog.png was not modified
+2025-04-13 00:21:43.952 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-blog.png - 304 null image/png 0.3227ms
+2025-04-13 00:21:43.952 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-support.png - 304 null image/png 0.2402ms
+2025-04-13 00:21:43.952 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/bg-01.png - 304 null image/png 0.5196ms
+2025-04-13 00:21:43.952 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-community.png - null null
+2025-04-13 00:21:43.952 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/book.png - null null
+2025-04-13 00:21:43.952 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/discord.svg - null null
+2025-04-13 00:21:43.952 +07:00 [INF] The file /images/getting-started/book.png was not modified
+2025-04-13 00:21:43.952 +07:00 [INF] The file /images/getting-started/img-community.png was not modified
+2025-04-13 00:21:43.953 +07:00 [INF] The file /images/getting-started/discord.svg was not modified
+2025-04-13 00:21:43.953 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/book.png - 304 null image/png 0.2635ms
+2025-04-13 00:21:43.953 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-community.png - 304 null image/png 0.2817ms
+2025-04-13 00:21:43.953 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/discord.svg - 304 null image/svg+xml 0.2512ms
+2025-04-13 00:21:43.953 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/x-white.svg - null null
+2025-04-13 00:21:43.953 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/stack-overflow.svg - null null
+2025-04-13 00:21:43.953 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/instagram.svg - null null
+2025-04-13 00:21:43.953 +07:00 [INF] The file /images/getting-started/x-white.svg was not modified
+2025-04-13 00:21:43.953 +07:00 [INF] The file /images/getting-started/stack-overflow.svg was not modified
+2025-04-13 00:21:43.953 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/stack-overflow.svg - 304 null image/svg+xml 0.1749ms
+2025-04-13 00:21:43.953 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/x-white.svg - 304 null image/svg+xml 0.1883ms
+2025-04-13 00:21:43.953 +07:00 [INF] The file /images/getting-started/instagram.svg was not modified
+2025-04-13 00:21:43.953 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/youtube.svg - null null
+2025-04-13 00:21:43.953 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/instagram.svg - 304 null image/svg+xml 0.2063ms
+2025-04-13 00:21:43.953 +07:00 [INF] The file /images/getting-started/youtube.svg was not modified
+2025-04-13 00:21:43.953 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/youtube.svg - 304 null image/svg+xml 0.145ms
+2025-04-13 00:22:23.646 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/identity/roles - null null
+2025-04-13 00:22:23.651 +07:00 [INF] Executing endpoint '/identity/roles (/identity/roles)'
+2025-04-13 00:22:23.652 +07:00 [INF] Executed endpoint '/identity/roles (/identity/roles)'
+2025-04-13 00:22:23.652 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/identity/roles - 200 null text/html; charset=utf-8 6.4925ms
+2025-04-13 00:22:23.680 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:22:23.680 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:22:23.680 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.5904ms
+2025-04-13 00:22:23.690 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-04-13 00:22:23.691 +07:00 [INF] The file /Acme.BookStore.Blazor.Client.styles.css was not modified
+2025-04-13 00:22:23.691 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - 304 null text/css 1.019ms
+2025-04-13 00:22:23.717 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:22:23.718 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:22:23.718 +07:00 [INF] The file /global.js was not modified
+2025-04-13 00:22:23.718 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:22:23.718 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 304 null application/javascript 0.5038ms
+2025-04-13 00:22:23.718 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:22:23.718 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:22:23.718 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 1.0218ms
+2025-04-13 00:22:23.728 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-13 00:22:23.728 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 0.474ms
+2025-04-13 00:22:23.730 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:22:23.736 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.2512ms
+2025-04-13 00:22:23.780 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - null null
+2025-04-13 00:22:23.781 +07:00 [INF] The file /_framework/blazor.boot.json was not modified
+2025-04-13 00:22:23.781 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - 304 null application/json 0.3919ms
+2025-04-13 00:22:23.805 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/appsettings.json - null null
+2025-04-13 00:22:23.806 +07:00 [INF] The file /appsettings.json was not modified
+2025-04-13 00:22:23.806 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/appsettings.json - 304 null application/json 0.3321ms
+2025-04-13 00:22:26.283 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/authentication/login-callback?code=kONNIHeytpqMZqmHXfyLFaqb3mr2RkseKsR5jBsJfPU&state=8def27484fcc48d7a9960e17129aa665&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - null null
+2025-04-13 00:22:26.286 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:22:26.287 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:22:26.288 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/authentication/login-callback?code=kONNIHeytpqMZqmHXfyLFaqb3mr2RkseKsR5jBsJfPU&state=8def27484fcc48d7a9960e17129aa665&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 4.3202ms
+2025-04-13 00:22:26.300 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:22:26.302 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:22:26.302 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:22:26.303 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:22:26.303 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 2.2556ms
+2025-04-13 00:22:26.314 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:22:26.319 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.9562ms
+2025-04-13 00:22:26.462 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - null null
+2025-04-13 00:22:26.462 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - 200 799 application/javascript; charset=utf-8 0.147ms
+2025-04-13 00:22:26.465 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - null null
+2025-04-13 00:22:26.465 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - 204 null null 0.0582ms
+2025-04-13 00:22:43.662 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/identity/roles - null null
+2025-04-13 00:22:43.664 +07:00 [INF] Executing endpoint '/identity/roles (/identity/roles)'
+2025-04-13 00:22:43.665 +07:00 [INF] Executed endpoint '/identity/roles (/identity/roles)'
+2025-04-13 00:22:43.665 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/identity/roles - 200 null text/html; charset=utf-8 2.9571ms
+2025-04-13 00:22:43.682 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:22:43.682 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:22:43.682 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.4027ms
+2025-04-13 00:22:43.687 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/main.css - null null
+2025-04-13 00:22:43.687 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-13 00:22:43.687 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 0.2863ms
+2025-04-13 00:22:43.687 +07:00 [INF] The file /main.css was not modified
+2025-04-13 00:22:43.687 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/main.css - 304 null text/css 0.4349ms
+2025-04-13 00:22:43.691 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:22:43.691 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:22:43.691 +07:00 [INF] The file /global.js was not modified
+2025-04-13 00:22:43.691 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 304 null application/javascript 0.4316ms
+2025-04-13 00:22:43.691 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:22:43.692 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:22:43.692 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:22:43.692 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 0.935ms
+2025-04-13 00:22:43.695 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:22:43.700 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.2484ms
+2025-04-13 00:22:43.749 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - null null
+2025-04-13 00:22:43.750 +07:00 [INF] The file /_framework/blazor.boot.json was not modified
+2025-04-13 00:22:43.750 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - 304 null application/json 0.4174ms
+2025-04-13 00:22:43.760 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/favicon.ico - null null
+2025-04-13 00:22:43.760 +07:00 [INF] The file /favicon.ico was not modified
+2025-04-13 00:22:43.760 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/favicon.ico - 304 null image/x-icon 0.4269ms
+2025-04-13 00:22:43.778 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/appsettings.json - null null
+2025-04-13 00:22:43.779 +07:00 [INF] The file /appsettings.json was not modified
+2025-04-13 00:22:43.780 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/appsettings.json - 304 null application/json 1.2882ms
+2025-04-13 00:22:46.047 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/authentication/login-callback?code=nTzhocCykcjQOMEYo1f2otLDzkvUyXFLVnAgYoAMxpg&state=070fe87cf1ef4f779da108690106a071&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - null null
+2025-04-13 00:22:46.049 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:22:46.050 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:22:46.051 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/authentication/login-callback?code=nTzhocCykcjQOMEYo1f2otLDzkvUyXFLVnAgYoAMxpg&state=070fe87cf1ef4f779da108690106a071&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 3.1323ms
+2025-04-13 00:22:46.059 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:22:46.060 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:22:46.060 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:22:46.060 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:22:46.060 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 0.954ms
+2025-04-13 00:22:46.064 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:22:46.068 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3.3729ms
+2025-04-13 00:22:46.279 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - null null
+2025-04-13 00:22:46.279 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - 200 799 application/javascript; charset=utf-8 0.1339ms
+2025-04-13 00:22:46.283 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - null null
+2025-04-13 00:22:46.284 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - 204 null null 0.0635ms
+2025-04-13 00:22:47.121 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - null null
+2025-04-13 00:22:47.121 +07:00 [INF] The file /images/logo/leptonx-lite/logo-light.png was not modified
+2025-04-13 00:22:47.121 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - 304 null image/png 0.3525ms
+2025-04-13 00:25:26.669 +07:00 [INF] Starting web host.
+2025-04-13 00:25:27.356 +07:00 [INF] Loaded ABP modules:
+2025-04-13 00:25:27.356 +07:00 [INF] - Acme.BookStore.Blazor.BookStoreBlazorModule
+2025-04-13 00:25:27.356 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-04-13 00:25:27.356 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-04-13 00:25:27.356 +07:00 [INF]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-04-13 00:25:27.356 +07:00 [INF]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-04-13 00:25:27.356 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-04-13 00:25:27.356 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-04-13 00:25:27.356 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-04-13 00:25:27.356 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-04-13 00:25:27.356 +07:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Data.AbpDataModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-04-13 00:25:27.356 +07:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-04-13 00:25:27.356 +07:00 [INF]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]                   - Volo.Abp.Timing.AbpTimingModule
+2025-04-13 00:25:27.356 +07:00 [INF]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-04-13 00:25:27.356 +07:00 [INF]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-04-13 00:25:27.356 +07:00 [INF]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-04-13 00:25:27.356 +07:00 [INF]                         - Volo.Abp.Security.AbpSecurityModule
+2025-04-13 00:25:27.356 +07:00 [INF]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-04-13 00:25:27.356 +07:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2025-04-13 00:25:27.356 +07:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-04-13 00:25:27.356 +07:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2025-04-13 00:25:27.356 +07:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-04-13 00:25:27.356 +07:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-04-13 00:25:27.356 +07:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2025-04-13 00:25:27.588 +07:00 [INF] User profile is available. Using 'C:\Users\ADmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-13 00:25:27.730 +07:00 [WRN] Mapped static asset endpoints not found. Ensure 'MapStaticAssets' is called before 'AddInteractiveWebAssemblyRenderMode'.
+2025-04-13 00:25:27.841 +07:00 [INF] Initialized all ABP modules.
+2025-04-13 00:25:27.943 +07:00 [INF] Now listening on: https://localhost:44302
+2025-04-13 00:25:27.976 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-13 00:25:27.976 +07:00 [INF] Hosting environment: Development
+2025-04-13 00:25:27.976 +07:00 [INF] Content root path: E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor
+2025-04-13 00:25:28.217 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/ - null null
+2025-04-13 00:25:28.277 +07:00 [INF] Executing endpoint '/ (/)'
+2025-04-13 00:25:28.327 +07:00 [INF] Executed endpoint '/ (/)'
+2025-04-13 00:25:28.332 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/ - 200 null text/html; charset=utf-8 114.689ms
+2025-04-13 00:25:28.350 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:25:28.354 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-04-13 00:25:28.354 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-13 00:25:28.355 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:25:28.356 +07:00 [INF] The file /Acme.BookStore.Blazor.Client.styles.css was not modified
+2025-04-13 00:25:28.356 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:25:28.356 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - 304 null text/css 1.8406ms
+2025-04-13 00:25:28.357 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:25:28.357 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:25:28.357 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:25:28.358 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:25:28.358 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 2.9664ms
+2025-04-13 00:25:28.368 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 13.6819ms
+2025-04-13 00:25:28.376 +07:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'N/A'
+2025-04-13 00:25:28.376 +07:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'N/A'
+2025-04-13 00:25:28.377 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 200 701711 text/css 27.3169ms
+2025-04-13 00:25:28.377 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 200 677686 application/javascript 20.9725ms
+2025-04-13 00:25:28.387 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.0213ms
+2025-04-13 00:25:28.461 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - null null
+2025-04-13 00:25:28.481 +07:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-04-13 00:25:28.481 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - 200 70285 application/json 20.3972ms
+2025-04-13 00:25:28.498 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/appsettings.json - null null
+2025-04-13 00:25:28.499 +07:00 [INF] The file /appsettings.json was not modified
+2025-04-13 00:25:28.499 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/appsettings.json - 304 null application/json 0.6543ms
+2025-04-13 00:25:28.628 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.r0lszkhomc.wasm - null null
+2025-04-13 00:25:28.644 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Domain.Shared.r0lszkhomc.wasm'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\Acme.BookStore.Domain.Shared.r0lszkhomc.wasm'
+2025-04-13 00:25:28.644 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.r0lszkhomc.wasm - 200 44821 application/wasm 15.6359ms
+2025-04-13 00:25:30.586 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/authentication/login-callback?code=RYaVfknXx09zIjzos_SAXCQF-CL7Gk1lsxXsCPwWaiI&state=a385afdf7090440d97c7964523a26875&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - null null
+2025-04-13 00:25:30.598 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:25:30.600 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:25:30.600 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/authentication/login-callback?code=RYaVfknXx09zIjzos_SAXCQF-CL7Gk1lsxXsCPwWaiI&state=a385afdf7090440d97c7964523a26875&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 13.6057ms
+2025-04-13 00:25:30.609 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:25:30.610 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:25:30.610 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 1.4086ms
+2025-04-13 00:25:30.611 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:25:30.611 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:25:30.611 +07:00 [INF] The file /global.js was not modified
+2025-04-13 00:25:30.612 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 304 null application/javascript 0.4569ms
+2025-04-13 00:25:30.613 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:25:30.619 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:25:30.619 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:25:30.619 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:25:30.620 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 8.4166ms
+2025-04-13 00:25:30.624 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.0043ms
+2025-04-13 00:25:30.759 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - null null
+2025-04-13 00:25:30.759 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - 200 799 application/javascript; charset=utf-8 0.2239ms
+2025-04-13 00:25:30.765 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - null null
+2025-04-13 00:25:30.765 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - 204 null null 0.6981ms
+2025-04-13 00:25:31.646 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/bg-01.png - null null
+2025-04-13 00:25:31.646 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-support.png - null null
+2025-04-13 00:25:31.646 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-blog.png - null null
+2025-04-13 00:25:31.646 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-community.png - null null
+2025-04-13 00:25:31.647 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/book.png - null null
+2025-04-13 00:25:31.647 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/x-white.svg - null null
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/bg-01.png was not modified
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/img-support.png was not modified
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/img-community.png was not modified
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/img-blog.png was not modified
+2025-04-13 00:25:31.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-community.png - 304 null image/png 1.2422ms
+2025-04-13 00:25:31.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-blog.png - 304 null image/png 1.2396ms
+2025-04-13 00:25:31.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/bg-01.png - 304 null image/png 1.2328ms
+2025-04-13 00:25:31.647 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/stack-overflow.svg - null null
+2025-04-13 00:25:31.647 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/discord.svg - null null
+2025-04-13 00:25:31.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-support.png - 304 null image/png 1.2398ms
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/book.png was not modified
+2025-04-13 00:25:31.647 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/youtube.svg - null null
+2025-04-13 00:25:31.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/book.png - 304 null image/png 0.3714ms
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/stack-overflow.svg was not modified
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/discord.svg was not modified
+2025-04-13 00:25:31.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/stack-overflow.svg - 304 null image/svg+xml 0.1794ms
+2025-04-13 00:25:31.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/discord.svg - 304 null image/svg+xml 0.1775ms
+2025-04-13 00:25:31.647 +07:00 [INF] The file /images/getting-started/x-white.svg was not modified
+2025-04-13 00:25:31.648 +07:00 [INF] The file /images/getting-started/youtube.svg was not modified
+2025-04-13 00:25:31.648 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/x-white.svg - 304 null image/svg+xml 0.486ms
+2025-04-13 00:25:31.648 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/youtube.svg - 304 null image/svg+xml 0.2271ms
+2025-04-13 00:25:31.648 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/instagram.svg - null null
+2025-04-13 00:25:31.648 +07:00 [INF] The file /images/getting-started/instagram.svg was not modified
+2025-04-13 00:25:31.648 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/instagram.svg - 304 null image/svg+xml 0.2302ms
+2025-04-13 00:25:31.648 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:25:31.648 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:25:31.648 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.3066ms
+2025-04-13 00:30:54.521 +07:00 [INF] Starting web host.
+2025-04-13 00:30:55.143 +07:00 [INF] Loaded ABP modules:
+2025-04-13 00:30:55.144 +07:00 [INF] - Acme.BookStore.Blazor.BookStoreBlazorModule
+2025-04-13 00:30:55.144 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-04-13 00:30:55.144 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-04-13 00:30:55.144 +07:00 [INF]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-04-13 00:30:55.144 +07:00 [INF]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-04-13 00:30:55.144 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-04-13 00:30:55.144 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-04-13 00:30:55.144 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-04-13 00:30:55.144 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-04-13 00:30:55.144 +07:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Data.AbpDataModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-04-13 00:30:55.144 +07:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-04-13 00:30:55.144 +07:00 [INF]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]                   - Volo.Abp.Timing.AbpTimingModule
+2025-04-13 00:30:55.144 +07:00 [INF]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-04-13 00:30:55.144 +07:00 [INF]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-04-13 00:30:55.144 +07:00 [INF]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-04-13 00:30:55.144 +07:00 [INF]                         - Volo.Abp.Security.AbpSecurityModule
+2025-04-13 00:30:55.144 +07:00 [INF]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-04-13 00:30:55.144 +07:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2025-04-13 00:30:55.144 +07:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-04-13 00:30:55.144 +07:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2025-04-13 00:30:55.144 +07:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-04-13 00:30:55.144 +07:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-04-13 00:30:55.144 +07:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2025-04-13 00:30:55.392 +07:00 [INF] User profile is available. Using 'C:\Users\ADmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-13 00:30:55.665 +07:00 [WRN] Mapped static asset endpoints not found. Ensure 'MapStaticAssets' is called before 'AddInteractiveWebAssemblyRenderMode'.
+2025-04-13 00:30:55.696 +07:00 [INF] Initialized all ABP modules.
+2025-04-13 00:30:55.795 +07:00 [INF] Now listening on: https://localhost:44302
+2025-04-13 00:30:55.834 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-13 00:30:55.834 +07:00 [INF] Hosting environment: Development
+2025-04-13 00:30:55.835 +07:00 [INF] Content root path: E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor
+2025-04-13 00:30:56.203 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/identity/roles - null null
+2025-04-13 00:30:56.275 +07:00 [INF] Executing endpoint '/identity/roles (/identity/roles)'
+2025-04-13 00:30:56.338 +07:00 [INF] Executed endpoint '/identity/roles (/identity/roles)'
+2025-04-13 00:30:56.346 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/identity/roles - 200 null text/html; charset=utf-8 142.995ms
+2025-04-13 00:30:56.366 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-04-13 00:30:56.366 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/main.css - null null
+2025-04-13 00:30:56.366 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:30:56.371 +07:00 [INF] The file /main.css was not modified
+2025-04-13 00:30:56.371 +07:00 [INF] The file /Acme.BookStore.Blazor.Client.styles.css was not modified
+2025-04-13 00:30:56.372 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/main.css - 304 null text/css 5.7312ms
+2025-04-13 00:30:56.372 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - 304 null text/css 5.736ms
+2025-04-13 00:30:56.391 +07:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'N/A'
+2025-04-13 00:30:56.392 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:30:56.394 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 200 701711 text/css 27.2462ms
+2025-04-13 00:30:56.396 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:30:56.397 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:30:56.398 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:30:56.398 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 6.1466ms
+2025-04-13 00:30:56.399 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:30:56.405 +07:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'N/A'
+2025-04-13 00:30:56.406 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 200 677686 application/javascript 6.4352ms
+2025-04-13 00:30:56.417 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-13 00:30:56.417 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:30:56.420 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 2.7056ms
+2025-04-13 00:30:56.435 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.1702ms
+2025-04-13 00:30:56.465 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - null null
+2025-04-13 00:30:56.472 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/favicon.ico - null null
+2025-04-13 00:30:56.473 +07:00 [INF] The file /favicon.ico was not modified
+2025-04-13 00:30:56.473 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/favicon.ico - 304 null image/x-icon 0.4108ms
+2025-04-13 00:30:56.485 +07:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-04-13 00:30:56.486 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - 200 70285 application/json 20.8513ms
+2025-04-13 00:30:56.507 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/appsettings.json - null null
+2025-04-13 00:30:56.507 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.2u07w8faz3.pdb - null null
+2025-04-13 00:30:56.508 +07:00 [INF] The file /appsettings.json was not modified
+2025-04-13 00:30:56.508 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/appsettings.json - 304 null application/json 0.8542ms
+2025-04-13 00:30:56.509 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:30:56.535 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Blazor.Client.2u07w8faz3.pdb.gz'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\obj\Debug\net9.0\compressed\qoe0p70cxu-2u07w8faz3.gz'
+2025-04-13 00:30:56.536 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-04-13 00:30:56.537 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.2u07w8faz3.pdb.gz - 200 28276 application/octet-stream 29.4688ms
+2025-04-13 00:30:56.632 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.hyuk9dqjh0.wasm - null null
+2025-04-13 00:30:56.647 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Blazor.Client.hyuk9dqjh0.wasm'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\Acme.BookStore.Blazor.Client.hyuk9dqjh0.wasm'
+2025-04-13 00:30:56.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Blazor.Client.hyuk9dqjh0.wasm - 200 71445 application/wasm 15.1209ms
+2025-04-13 00:30:58.869 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/authentication/login-callback?code=xHjzZjE65juSJpg1IhfGkLZGavqZLFAMCbt0FPflsGA&state=4d8b208c72f74525b36b48f1492c6b8a&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - null null
+2025-04-13 00:30:58.880 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:30:58.882 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:30:58.883 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/authentication/login-callback?code=xHjzZjE65juSJpg1IhfGkLZGavqZLFAMCbt0FPflsGA&state=4d8b208c72f74525b36b48f1492c6b8a&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 14.0972ms
+2025-04-13 00:30:58.891 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:30:58.891 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:30:58.891 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:30:58.891 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.5687ms
+2025-04-13 00:30:58.897 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:30:58.897 +07:00 [INF] The file /global.js was not modified
+2025-04-13 00:30:58.897 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:30:58.897 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 304 null application/javascript 0.5722ms
+2025-04-13 00:30:58.897 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:30:58.897 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:30:58.897 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 6.8544ms
+2025-04-13 00:30:58.909 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:30:58.920 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.1858ms
+2025-04-13 00:30:59.082 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - null null
+2025-04-13 00:30:59.082 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - 200 799 application/javascript; charset=utf-8 0.3069ms
+2025-04-13 00:30:59.093 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - null null
+2025-04-13 00:30:59.095 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - 204 null null 1.1996ms
+2025-04-13 00:30:59.958 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - null null
+2025-04-13 00:30:59.958 +07:00 [INF] The file /images/logo/leptonx-lite/logo-light.png was not modified
+2025-04-13 00:30:59.958 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - 304 null image/png 0.5906ms
+2025-04-13 00:31:00.548 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:31:00.549 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:31:00.549 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.6251ms
+2025-04-13 00:31:11.539 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:31:11.539 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:31:11.540 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.5031ms
+2025-04-13 00:31:11.648 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/dotnet.runtime.js.map - null null
+2025-04-13 00:31:11.648 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/dotnet.js.map - null null
+2025-04-13 00:31:11.672 +07:00 [INF] Sending file. Request path: '/_framework/dotnet.js.map'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.js.map'
+2025-04-13 00:31:11.672 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/dotnet.js.map - 200 56573 text/plain 24.564ms
+2025-04-13 00:31:11.676 +07:00 [INF] Sending file. Request path: '/_framework/dotnet.runtime.js.map'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.map'
+2025-04-13 00:31:11.676 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/dotnet.runtime.js.map - 200 275753 text/plain 28.3046ms
+2025-04-13 00:31:11.731 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/bootstrap.min.css.map - null null
+2025-04-13 00:31:11.732 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/bootstrap.min.css.map - 404 0 null 1.4044ms
+2025-04-13 00:31:11.733 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44302/bootstrap.min.css.map, Response status code: 404
+2025-04-13 00:42:51.795 +07:00 [INF] Starting web host.
+2025-04-13 00:42:52.444 +07:00 [INF] Loaded ABP modules:
+2025-04-13 00:42:52.444 +07:00 [INF] - Acme.BookStore.Blazor.BookStoreBlazorModule
+2025-04-13 00:42:52.444 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-04-13 00:42:52.444 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-04-13 00:42:52.444 +07:00 [INF]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-04-13 00:42:52.444 +07:00 [INF]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-04-13 00:42:52.444 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-04-13 00:42:52.444 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-04-13 00:42:52.444 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-04-13 00:42:52.444 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-04-13 00:42:52.444 +07:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.Data.AbpDataModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-04-13 00:42:52.444 +07:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-04-13 00:42:52.444 +07:00 [INF]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]                   - Volo.Abp.Timing.AbpTimingModule
+2025-04-13 00:42:52.444 +07:00 [INF]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-04-13 00:42:52.444 +07:00 [INF]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-04-13 00:42:52.444 +07:00 [INF]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-04-13 00:42:52.444 +07:00 [INF]                         - Volo.Abp.Security.AbpSecurityModule
+2025-04-13 00:42:52.444 +07:00 [INF]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-04-13 00:42:52.444 +07:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2025-04-13 00:42:52.444 +07:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-04-13 00:42:52.444 +07:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-04-13 00:42:52.444 +07:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-04-13 00:42:52.444 +07:00 [INF]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-04-13 00:42:52.444 +07:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-04-13 00:42:52.445 +07:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2025-04-13 00:42:52.445 +07:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-04-13 00:42:52.445 +07:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-04-13 00:42:52.445 +07:00 [INF]             - Volo.Abp.Features.AbpFeaturesModule
+2025-04-13 00:42:52.661 +07:00 [INF] User profile is available. Using 'C:\Users\ADmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-13 00:42:52.817 +07:00 [WRN] Mapped static asset endpoints not found. Ensure 'MapStaticAssets' is called before 'AddInteractiveWebAssemblyRenderMode'.
+2025-04-13 00:42:52.904 +07:00 [INF] Initialized all ABP modules.
+2025-04-13 00:42:52.981 +07:00 [INF] Now listening on: https://localhost:44302
+2025-04-13 00:42:53.014 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-13 00:42:53.014 +07:00 [INF] Hosting environment: Development
+2025-04-13 00:42:53.014 +07:00 [INF] Content root path: E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor
+2025-04-13 00:42:53.366 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/ - null null
+2025-04-13 00:42:53.430 +07:00 [INF] Executing endpoint '/ (/)'
+2025-04-13 00:42:53.485 +07:00 [INF] Executed endpoint '/ (/)'
+2025-04-13 00:42:53.490 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/ - 200 null text/html; charset=utf-8 124.9387ms
+2025-04-13 00:42:53.506 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-04-13 00:42:53.506 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:42:53.506 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-13 00:42:53.507 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/main.css - null null
+2025-04-13 00:42:53.507 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:42:53.507 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:42:53.510 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:42:53.510 +07:00 [INF] The file /Acme.BookStore.Blazor.Client.styles.css was not modified
+2025-04-13 00:42:53.511 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:42:53.510 +07:00 [INF] The file /main.css was not modified
+2025-04-13 00:42:53.511 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:42:53.511 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 3.5467ms
+2025-04-13 00:42:53.511 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/Acme.BookStore.Blazor.Client.styles.css - 304 null text/css 4.9031ms
+2025-04-13 00:42:53.511 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/main.css - 304 null text/css 4.351ms
+2025-04-13 00:42:53.519 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 13.0814ms
+2025-04-13 00:42:53.520 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:42:53.528 +07:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'N/A'
+2025-04-13 00:42:53.528 +07:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'N/A'
+2025-04-13 00:42:53.530 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 200 677686 application/javascript 22.4263ms
+2025-04-13 00:42:53.530 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 200 701711 text/css 23.9118ms
+2025-04-13 00:42:53.547 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.3809ms
+2025-04-13 00:42:53.606 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - null null
+2025-04-13 00:42:53.624 +07:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json'
+2025-04-13 00:42:53.624 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.boot.json - 200 70285 application/json 18.6671ms
+2025-04-13 00:42:53.651 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/appsettings.json - null null
+2025-04-13 00:42:53.651 +07:00 [INF] The file /appsettings.json was not modified
+2025-04-13 00:42:53.651 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/appsettings.json - 304 null application/json 0.4777ms
+2025-04-13 00:42:53.855 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.oe5be0sghs.wasm - null null
+2025-04-13 00:42:53.878 +07:00 [INF] Sending file. Request path: '/_framework/Acme.BookStore.Domain.Shared.oe5be0sghs.wasm'. Physical path: 'E:\C#\abp-framework\Acme.BookStore\Acme.BookStore\src\Acme.BookStore.Blazor.Client\bin\Debug\net9.0\wwwroot\_framework\Acme.BookStore.Domain.Shared.oe5be0sghs.wasm'
+2025-04-13 00:42:53.878 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/Acme.BookStore.Domain.Shared.oe5be0sghs.wasm - 200 44821 application/wasm 23.1955ms
+2025-04-13 00:42:56.093 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/authentication/login-callback?code=wO7P1E_riQxqlnV_IMHWoiN3dbRgY6VC_zmWrPIEhwE&state=c4e1bb566eb44596a5c2ce156817a9fa&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - null null
+2025-04-13 00:42:56.097 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:42:56.099 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:42:56.099 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/authentication/login-callback?code=wO7P1E_riQxqlnV_IMHWoiN3dbRgY6VC_zmWrPIEhwE&state=c4e1bb566eb44596a5c2ce156817a9fa&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 5.6876ms
+2025-04-13 00:42:56.106 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:42:56.106 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:42:56.106 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:42:56.106 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:42:56.106 +07:00 [INF] The file /global.js was not modified
+2025-04-13 00:42:56.106 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.6968ms
+2025-04-13 00:42:56.106 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 304 null application/javascript 0.6942ms
+2025-04-13 00:42:56.110 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:42:56.113 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:42:56.114 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:42:56.114 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:42:56.114 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 8.1654ms
+2025-04-13 00:42:56.117 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.7625ms
+2025-04-13 00:42:56.842 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/authentication/login-callback?code=NsBGiNuwEGs4yuRYUBVKXqTXB5TTYThgmln-BO13MjQ&state=c884818c7fd749b6ac2f78bc4f4a6b72&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - null null
+2025-04-13 00:42:56.844 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:42:56.845 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-04-13 00:42:56.845 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/authentication/login-callback?code=NsBGiNuwEGs4yuRYUBVKXqTXB5TTYThgmln-BO13MjQ&state=c884818c7fd749b6ac2f78bc4f4a6b72&iss=https%3A%2F%2Flocalhost%3A44324%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 3.8941ms
+2025-04-13 00:42:56.853 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:42:56.853 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - null null
+2025-04-13 00:42:56.853 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - null null
+2025-04-13 00:42:56.853 +07:00 [INF] The file /global.js was not modified
+2025-04-13 00:42:56.853 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:42:56.853 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.js?_v=638573412643868732 - 304 null application/javascript 0.373ms
+2025-04-13 00:42:56.853 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.4811ms
+2025-04-13 00:42:56.853 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-04-13 00:42:56.854 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-04-13 00:42:56.854 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-04-13 00:42:56.854 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor.web.js - 304 null text/javascript 0.6676ms
+2025-04-13 00:42:56.858 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - null null
+2025-04-13 00:42:56.862 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3.8809ms
+2025-04-13 00:42:56.968 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - null null
+2025-04-13 00:42:56.968 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload.js - 200 799 application/javascript; charset=utf-8 0.197ms
+2025-04-13 00:42:56.972 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - null null
+2025-04-13 00:42:56.973 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/blazor-hotreload - 204 null null 0.8514ms
+2025-04-13 00:42:57.854 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - null null
+2025-04-13 00:42:57.855 +07:00 [INF] The file /images/logo/leptonx-lite/logo-light.png was not modified
+2025-04-13 00:42:57.855 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/logo/leptonx-lite/logo-light.png - 304 null image/png 0.6639ms
+2025-04-13 00:42:57.909 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/bg-01.png - null null
+2025-04-13 00:42:57.909 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-blog.png - null null
+2025-04-13 00:42:57.909 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-support.png - null null
+2025-04-13 00:42:57.909 +07:00 [INF] The file /images/getting-started/img-blog.png was not modified
+2025-04-13 00:42:57.909 +07:00 [INF] The file /images/getting-started/img-support.png was not modified
+2025-04-13 00:42:57.909 +07:00 [INF] The file /images/getting-started/bg-01.png was not modified
+2025-04-13 00:42:57.909 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/bg-01.png - 304 null image/png 0.4105ms
+2025-04-13 00:42:57.909 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-blog.png - 304 null image/png 0.3784ms
+2025-04-13 00:42:57.909 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-support.png - 304 null image/png 0.378ms
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/book.png - null null
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/x-white.svg - null null
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/img-community.png - null null
+2025-04-13 00:42:57.910 +07:00 [INF] The file /images/getting-started/book.png was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] The file /images/getting-started/x-white.svg was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/book.png - 304 null image/png 0.2112ms
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/x-white.svg - 304 null image/svg+xml 0.1997ms
+2025-04-13 00:42:57.910 +07:00 [INF] The file /images/getting-started/img-community.png was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - null null
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/img-community.png - 304 null image/png 0.1973ms
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/discord.svg - null null
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/stack-overflow.svg - null null
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/youtube.svg - null null
+2025-04-13 00:42:57.910 +07:00 [INF] The file /images/getting-started/discord.svg was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] The file /global.css was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/discord.svg - 304 null image/svg+xml 0.1443ms
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/global.css?_v=638573412641062157 - 304 null text/css 0.2652ms
+2025-04-13 00:42:57.910 +07:00 [INF] The file /images/getting-started/youtube.svg was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] The file /images/getting-started/stack-overflow.svg was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44302/images/getting-started/instagram.svg - null null
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/stack-overflow.svg - 304 null image/svg+xml 0.2005ms
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/youtube.svg - 304 null image/svg+xml 0.1605ms
+2025-04-13 00:42:57.910 +07:00 [INF] The file /images/getting-started/instagram.svg was not modified
+2025-04-13 00:42:57.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44302/images/getting-started/instagram.svg - 304 null image/svg+xml 0.1519ms
