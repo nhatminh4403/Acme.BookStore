@@ -1,16 +1,12 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 //using Acme.BookStore.Blazor.Components;
 using Acme.BookStore.Blazor.Client;
 using Volo.Abp;
+using Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling;
 using Volo.Abp.AspNetCore.Components.WebAssembly.WebApp;
-using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
 using Volo.Abp.AspNetCore.Mvc.Libs;
+using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
-using Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling;
 
 namespace Acme.BookStore.Blazor;
 

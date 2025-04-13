@@ -1,7 +1,5 @@
-﻿using Microsoft.Extensions.Localization;
-using Acme.BookStore.Localization;
+﻿using Acme.BookStore.Localization;
 using Microsoft.Extensions.Localization;
-using Acme.BookStore.Localization;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Ui.Branding;
 

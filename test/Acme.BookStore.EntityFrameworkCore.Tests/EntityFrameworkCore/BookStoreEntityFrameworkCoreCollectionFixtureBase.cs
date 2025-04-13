@@ -1,5 +1,4 @@
-﻿using Acme.BookStore.EntityFrameworkCore;
-using Xunit;
+﻿using Xunit;
 
 namespace Acme.BookStore.EntityFrameworkCore;
 

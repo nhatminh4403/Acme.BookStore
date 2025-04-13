@@ -1,16 +1,15 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-using Acme.BookStore.Localization;
-using Acme.BookStore.Permissions;
+﻿using Acme.BookStore.Localization;
 using Acme.BookStore.MultiTenancy;
+using Acme.BookStore.Permissions;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Threading.Tasks;
 using Volo.Abp.Account.Localization;
-using Volo.Abp.UI.Navigation;
 using Volo.Abp.Authorization.Permissions;
-using Volo.Abp.SettingManagement.Blazor.Menus;
-using Volo.Abp.Users;
-using Volo.Abp.TenantManagement.Blazor.Navigation;
 using Volo.Abp.Identity.Blazor;
+using Volo.Abp.SettingManagement.Blazor.Menus;
+using Volo.Abp.TenantManagement.Blazor.Navigation;
+using Volo.Abp.UI.Navigation;
 
 namespace Acme.BookStore.Blazor.Client.Navigation;
 
@@ -76,7 +75,11 @@ public class BookStoreMenuContributor : IMenuContributor
             l["Menu:Books"],
             url: "/books"
         ).RequirePermissions(BookStorePermissions.Books.Default));
-
+        context.Menu.AddItem(new ApplicationMenuItem(
+        "BooksStore.Authors",
+        l["Menu:Authors"],
+        url: "/authors"
+    ).RequirePermissions(BookStorePermissions.Books.Default));
 
     }
 

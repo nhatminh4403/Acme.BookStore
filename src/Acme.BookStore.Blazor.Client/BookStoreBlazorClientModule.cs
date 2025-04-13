@@ -1,28 +1,27 @@
-﻿using System;
-using System.Net.Http;
+﻿using Acme.BookStore.Blazor.Client.Navigation;
+using Acme.BookStore.Localization;
 using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
-using Microsoft.AspNetCore.Components.Web;
+using Localization.Resources.AbpUi;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Acme.BookStore.Blazor.Client.Navigation;
-using Localization.Resources.AbpUi;
-using Volo.Abp.Localization;
-using Acme.BookStore.Localization;
 using OpenIddict.Abstractions;
+using System;
+using System.Net.Http;
 using Volo.Abp.AspNetCore.Components.Web.Theming.Routing;
+using Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme;
+using Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling;
+using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
 using Volo.Abp.Autofac.WebAssembly;
 using Volo.Abp.AutoMapper;
-using Volo.Abp.Modularity;
-using Volo.Abp.UI.Navigation;
-using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
-using Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling;
-using Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme;
-using Volo.Abp.SettingManagement.Blazor.WebAssembly;
 using Volo.Abp.FeatureManagement.Blazor.WebAssembly;
-using Volo.Abp.TenantManagement.Blazor.WebAssembly;
 using Volo.Abp.Identity.Blazor.WebAssembly;
+using Volo.Abp.Localization;
+using Volo.Abp.Modularity;
+using Volo.Abp.SettingManagement.Blazor.WebAssembly;
+using Volo.Abp.TenantManagement.Blazor.WebAssembly;
+using Volo.Abp.UI.Navigation;
 
 namespace Acme.BookStore.Blazor.Client;
 
@@ -51,7 +50,7 @@ public class BookStoreBlazorClientModule : AbpModule
         ConfigureAutoMapper(context);
         ConfigureBundles();
     }
-    
+
     private void ConfigureLocalization()
     {
         Configure<AbpLocalizationOptions>(options =>
@@ -99,7 +98,7 @@ public class BookStoreBlazorClientModule : AbpModule
             options.ProviderOptions.DefaultScopes.Add("phone");
         });
     }
-    
+
     private static void ConfigureHttpClient(ServiceConfigurationContext context, IWebAssemblyHostEnvironment environment)
     {
         context.Services.AddTransient(sp => new HttpClient
