@@ -46,6 +46,7 @@ namespace Acme.BookStore.Blazor.Client.Pages
         {
             await SetPermissionsAsync();
             await GetAuthorsAsync();
+
         }
 
         private async Task SetPermissionsAsync()

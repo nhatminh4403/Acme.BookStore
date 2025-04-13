@@ -38,6 +38,20 @@
                   ShowPager="true"
                   PageSize="PageSize">
             <DataGridColumns>
+                
+                <DataGridColumn TItem="AuthorDto"
+                                Field="@nameof(AuthorDto.Name)"
+                                Caption="@L["Name"]"></DataGridColumn>
+                <DataGridColumn TItem="AuthorDto"
+                                Field="@nameof(AuthorDto.BirthDate)"
+                                Caption="@L["BirthDate"]">
+                    <DisplayTemplate>
+                        @context.BirthDate.ToShortDateString()
+                    </DisplayTemplate>
+                </DataGridColumn>
+                <DataGridColumn TItem="AuthorDto"
+                                Field="@nameof(AuthorDto.ShortBio)"
+                                Caption="@L["ShortBio"]"></DataGridColumn>
                 <DataGridColumn Width="150px"
                                 TItem="AuthorDto"
                                 Field="@nameof(AuthorDto.Id)"
@@ -63,16 +77,6 @@
                                 }
                             </DropdownMenu>
                         </Dropdown>
-                    </DisplayTemplate>
-                </DataGridColumn>
-                <DataGridColumn TItem="AuthorDto"
-                                Field="@nameof(AuthorDto.Name)"
-                                Caption="@L["Name"]"></DataGridColumn>
-                <DataGridColumn TItem="AuthorDto"
-                                Field="@nameof(AuthorDto.BirthDate)"
-                                Caption="@L["BirthDate"]">
-                    <DisplayTemplate>
-                        @context.BirthDate.ToShortDateString()
                     </DisplayTemplate>
                 </DataGridColumn>
             </DataGridColumns>

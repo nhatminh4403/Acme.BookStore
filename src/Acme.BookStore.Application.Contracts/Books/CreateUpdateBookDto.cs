@@ -19,5 +19,7 @@ namespace Acme.BookStore.Books
 
         [Required]
         public float Price { get; set; }
+        public Guid AuthorId { get; set; }
+        
     }
 }

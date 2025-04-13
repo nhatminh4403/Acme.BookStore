@@ -1,5 +1,6 @@
 ﻿@page "/books"
 @using Volo.Abp.Application.Dtos
+@using Volo.Abp
 @using Acme.BookStore.Books
 @using Acme.BookStore.Localization
 @using Acme.BookStore.Permissions
@@ -41,7 +42,7 @@
                                 Field="@nameof(BookDto.Type)"
                                 Caption="@L["Type"]">
                     <DisplayTemplate>
-                        @L[$"Enum:BookType.{context.Type}"]
+                        @L[$"{context.Type}"]
                     </DisplayTemplate>
                 </DataGridColumn>
                 <DataGridColumn TItem="BookDto"
@@ -61,7 +62,12 @@
                     <DisplayTemplate>
                         @context.CreationTime.ToLongDateString()
                     </DisplayTemplate>
+
                 </DataGridColumn>
+                <DataGridColumn TItem="BookDto"
+                                Field="@nameof(BookDto.AuthorName)"
+                                Caption="@L["Author"]"></DataGridColumn>
+
                 <DataGridEntityActionsColumn TItem="BookDto" @ref="@EntityActionsColumn">
                     <DisplayTemplate>
                         <EntityActions TItem="BookDto" EntityActionsColumn="@EntityActionsColumn">
@@ -127,6 +133,17 @@
                         <FieldLabel>@L["Price"]</FieldLabel>
                         <NumericEdit TValue="float" @bind-Value="NewEntity.Price" />
                     </Field>
+                    <Field>
+                        <FieldLabel>@L["Author"]</FieldLabel>
+                        <Select TValue="Guid" @bind-SelectedValue="@NewEntity.AuthorId">
+                            @foreach (var author in authorList)
+                            {
+                                <SelectItem TValue="Guid" Value="@author.Id">
+                                    @author.Name
+                                </SelectItem>
+                            }
+                        </Select>
+                    </Field>
                 </Validations>
             </ModalBody>
             <ModalFooter>
@@ -151,16 +168,27 @@
         <Form>
             <ModalHeader>
                 <ModalTitle>@EditingEntity.Name</ModalTitle>
-                <CloseButton Clicked="CloseEditModalAsync"/>
+                <CloseButton Clicked="CloseEditModalAsync" />
             </ModalHeader>
             <ModalBody>
                 <Validations @ref="@EditValidationsRef" Model="@NewEntity" ValidateOnLoad="false">
                     <Validation MessageLocalizer="@LH.Localize">
                         <Field>
+                            <FieldLabel>@L["Author"]</FieldLabel>
+                            <Select TValue="Guid" @bind-SelectedValue="@EditingEntity.AuthorId">
+                                @foreach (var author in authorList)
+                                {
+                                    <SelectItem TValue="Guid" Value="@author.Id">
+                                        @author.Name
+                                    </SelectItem>
+                                }
+                            </Select>
+                        </Field>
+                        <Field>
                             <FieldLabel>@L["Name"]</FieldLabel>
                             <TextEdit @bind-Text="@EditingEntity.Name">
                                 <Feedback>
-                                    <ValidationError/>
+                                    <ValidationError />
                                 </Feedback>
                             </TextEdit>
                         </Field>
@@ -178,52 +206,29 @@
                     </Field>
                     <Field>
                         <FieldLabel>@L["PublishDate"]</FieldLabel>
-                        <DateEdit TValue="DateTime" @bind-Date="EditingEntity.PublishDate"/>
+                        <DateEdit TValue="DateTime" @bind-Date="EditingEntity.PublishDate" />
                     </Field>
                     <Field>
                         <FieldLabel>@L["Price"]</FieldLabel>
-                        <NumericEdit TValue="float" @bind-Value="EditingEntity.Price"/>
+                        <NumericEdit TValue="float" @bind-Value="EditingEntity.Price" />
                     </Field>
                 </Validations>
             </ModalBody>
             <ModalFooter>
                 <Button Color="Color.Secondary"
-                        Clicked="CloseEditModalAsync">@L["Cancel"]</Button>
+                        Clicked="CloseEditModalAsync">
+                    @L["Cancel"]
+                </Button>
                 <Button Color="Color.Primary"
                         Type="@ButtonType.Submit"
                         PreventDefaultOnSubmit="true"
-                        Clicked="UpdateEntityAsync">@L["Save"]</Button>
+                        Clicked="UpdateEntityAsync">
+                    @L["Save"]
+                </Button>
             </ModalFooter>
         </Form>
     </ModalContent>
 </Modal>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -237,5 +242,22 @@
         CreatePolicyName = BookStorePermissions.Books.Create;
         UpdatePolicyName = BookStorePermissions.Books.Edit;
         DeletePolicyName = BookStorePermissions.Books.Delete;
+    }
+    IReadOnlyList<AuthorLookupDto> authorList = Array.Empty<AuthorLookupDto>();
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        authorList = (await AppService.GetAuthorLookupAsync()).Items;
+    }
+
+    protected override async Task OpenCreateModalAsync()
+    {
+        if (!authorList.Any())
+        {
+            throw new UserFriendlyException(message: L["AnAuthorIsRequiredForCreatingBook"]);
+        }
+
+        await base.OpenCreateModalAsync();
+        NewEntity.AuthorId = authorList.First().Id;
     }
 }
