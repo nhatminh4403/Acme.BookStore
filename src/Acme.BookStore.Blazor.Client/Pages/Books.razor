@@ -5,7 +5,7 @@
 @using Acme.BookStore.Localization
 @using Acme.BookStore.Permissions
 @using Microsoft.AspNetCore.Authorization
-@attribute [Authorize(BookStorePermissions.Books.Default)]
+@attribute [AllowAnonymous]
 @using Volo.Abp.AspNetCore.Components.Web;
 @inject AbpBlazorMessageLocalizerHelper<BookStoreResource> LH
 @inherits AbpCrudPageBase<IBookAppService, BookDto, Guid, PagedAndSortedResultRequestDto, CreateUpdateBookDto>
@@ -20,7 +20,7 @@
                 @if (HasCreatePermission)
                 {
                     <Button Color="Color.Primary"
-                            Clicked="OpenCreateModalAsync">
+                    Clicked="OpenCreateModalAsync">
                         @L["NewBook"]
                     </Button>
                 }
@@ -29,48 +29,48 @@
     </CardHeader>
     <CardBody>
         <DataGrid TItem="BookDto"
-                  Data="Entities"
-                  ReadData="OnDataGridReadAsync"
-                  TotalItems="TotalCount"
-                  ShowPager="true"
-                  PageSize="PageSize">
+        Data="Entities"
+        ReadData="OnDataGridReadAsync"
+        TotalItems="TotalCount"
+        ShowPager="true"
+        PageSize="PageSize">
             <DataGridColumns>
                 <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.Name)"
-                                Caption="@L["Name"]"></DataGridColumn>
+                Field="@nameof(BookDto.Name)"
+                Caption="@L["Name"]"></DataGridColumn>
                 <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.Type)"
-                                Caption="@L["Type"]">
+                Field="@nameof(BookDto.Type)"
+                Caption="@L["Type"]">
                     <DisplayTemplate>
                         @L[$"{context.Type}"]
                     </DisplayTemplate>
                 </DataGridColumn>
                 <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.PublishDate)"
-                                Caption="@L["PublishDate"]">
+                Field="@nameof(BookDto.PublishDate)"
+                Caption="@L["PublishDate"]">
                     <DisplayTemplate>
                         @context.PublishDate.ToShortDateString()
                     </DisplayTemplate>
                 </DataGridColumn>
                 <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.Price)"
-                                Caption="@L["Price"]">
+                Field="@nameof(BookDto.Price)"
+                Caption="@L["Price"]">
                 </DataGridColumn>
                 <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.CreationTime)"
-                                Caption="@L["CreationTime"]">
+                Field="@nameof(BookDto.CreationTime)"
+                Caption="@L["CreationTime"]">
                     <DisplayTemplate>
                         @context.CreationTime.ToLongDateString()
                     </DisplayTemplate>
 
                 </DataGridColumn>
                 <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.AuthorName)"
-                                Caption="@L["Author"]"></DataGridColumn>
-
-                <DataGridEntityActionsColumn TItem="BookDto" @ref="@EntityActionsColumn">
-                    <DisplayTemplate>
-                        <EntityActions TItem="BookDto" EntityActionsColumn="@EntityActionsColumn">
+                Field="@nameof(BookDto.AuthorName)"
+                Caption="@L["Author"]"></DataGridColumn>
+                @if(HasDeletePermission && HasUpdatePermission )
+                {
+                    <DataGridEntityActionsColumn TItem="BookDto" @ref="@EntityActionsColumn">
+                        <DisplayTemplate>
                             <EntityActions TItem="BookDto" EntityActionsColumn="@EntityActionsColumn">
                                 <EntityAction TItem="BookDto"
                                               Text="@L["Edit"]"
@@ -82,13 +82,10 @@
                                               Clicked="() => DeleteEntityAsync(context)"
                                               ConfirmationMessage="()=>GetDeleteConfirmationMessage(context)" />
                             </EntityActions>
-                            <EntityAction TItem="BookDto"
-                                          Text="@L["Delete"]"
-                                          Clicked="() => DeleteEntityAsync(context)"
-                                          ConfirmationMessage="() => GetDeleteConfirmationMessage(context)" />
-                        </EntityActions>
-                    </DisplayTemplate>
-                </DataGridEntityActionsColumn>
+                        </DisplayTemplate>
+                    </DataGridEntityActionsColumn>
+                }
+                
             </DataGridColumns>
         </DataGrid>
     </CardBody>

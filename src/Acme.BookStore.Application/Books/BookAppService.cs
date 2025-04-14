@@ -10,6 +10,7 @@ using Volo.Abp.Domain.Repositories;
 using Volo.Abp.ObjectMapping;
 using System.Linq;
 using System.Linq.Dynamic.Core;
+using Microsoft.AspNetCore.Authorization;
 namespace Acme.BookStore.Books
 {
     public class BookAppService :
@@ -60,6 +61,7 @@ namespace Acme.BookStore.Books
             bookDto.AuthorName = queryResult.author.Name;
             return bookDto;
         }
+        [AllowAnonymous]
         public override async Task<PagedResultDto<BookDto>> GetListAsync(PagedAndSortedResultRequestDto input)
         {
             //Get the IQueryable<Book> from the repository

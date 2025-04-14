@@ -68,18 +68,18 @@ public class BookStoreMenuContributor : IMenuContributor
             );
 
         context.Menu.AddItem(bookStoreMenu);
-
-        //CHECK the PERMISSION
+        //CHECK the PERMISSION 
         bookStoreMenu.AddItem(new ApplicationMenuItem(
             "BooksStore.Books",
             l["Menu:Books"],
             url: "/books"
-        ).RequirePermissions(BookStorePermissions.Books.Default));
+        )/*.RequirePermissions(BookStorePermissions.Books.Default)*/);
         context.Menu.AddItem(new ApplicationMenuItem(
-        "BooksStore.Authors",
+        "Authors",
         l["Menu:Authors"],
+        icon: "fa-solid fa-user-tie",
         url: "/authors"
-    ).RequirePermissions(BookStorePermissions.Books.Default));
+        )/*.RequirePermissions(BookStorePermissions.Authors.Default)*/);
 
     }
 

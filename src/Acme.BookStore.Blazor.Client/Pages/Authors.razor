@@ -1,11 +1,13 @@
 ﻿@page "/authors"
-
 @using Acme.BookStore.Authors
 @using Acme.BookStore.Localization
 @using Volo.Abp.AspNetCore.Components.Web
-@inherits BookStoreComponentBase
+@using Microsoft.AspNetCore.Authorization
+
 @inject IAuthorAppService AuthorAppService
 @inject AbpBlazorMessageLocalizerHelper<BookStoreResource> LH
+@attribute [AllowAnonymous]
+@inherits BookStoreComponentBase
 
 
 <h3>Authors</h3>
@@ -20,13 +22,13 @@
                 <h2>@L["Authors"]</h2>
             </Column>
             <Column ColumnSize="ColumnSize.IsAuto">
-                    @if (CanCreateAuthor)
-                    {
-                        <Button Color="Color.Primary"
-                                Clicked="OpenCreateAuthorModal">
-                            @L["NewAuthor"]
-                        </Button>
-                    }
+                @if (CanCreateAuthor)
+                {
+                    <Button Color="Color.Primary"
+                            Clicked="OpenCreateAuthorModal">
+                        @L["NewAuthor"]
+                    </Button>
+                }
             </Column>
         </Row>
     </CardHeader>
@@ -38,7 +40,7 @@
                   ShowPager="true"
                   PageSize="PageSize">
             <DataGridColumns>
-                
+
                 <DataGridColumn TItem="AuthorDto"
                                 Field="@nameof(AuthorDto.Name)"
                                 Caption="@L["Name"]"></DataGridColumn>
@@ -52,33 +54,38 @@
                 <DataGridColumn TItem="AuthorDto"
                                 Field="@nameof(AuthorDto.ShortBio)"
                                 Caption="@L["ShortBio"]"></DataGridColumn>
-                <DataGridColumn Width="150px"
-                                TItem="AuthorDto"
-                                Field="@nameof(AuthorDto.Id)"
-                                Sortable="false"
-                                Caption="@L["Actions"]">
-                    <DisplayTemplate>
-                        <Dropdown>
-                            <DropdownToggle Color="Color.Primary">
-                                @L["Actions"]
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                @if (CanEditAuthor)
-                                {
-                                    <DropdownItem Clicked="() => OpenEditAuthorModal(context)">
-                                        @L["Edit"]
-                                    </DropdownItem>
-                                }
-                                @if (CanDeleteAuthor)
-                                {
-                                    <DropdownItem Clicked="() => DeleteAuthorAsync(context)">
-                                        @L["Delete"]
-                                    </DropdownItem>
-                                }
-                            </DropdownMenu>
-                        </Dropdown>
-                    </DisplayTemplate>
-                </DataGridColumn>
+                @if (CanEditAuthor || CanDeleteAuthor)
+                {
+                    <DataGridColumn Width="150px"
+                                    TItem="AuthorDto"
+                                    Field="@nameof(AuthorDto.Id)"
+                                    Sortable="false"
+                                    Caption="@L["Actions"]">
+
+                        <DisplayTemplate>
+                            <Dropdown>
+                                <DropdownToggle Color="Color.Primary">
+                                    @L["Actions"]
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                    @if (CanEditAuthor)
+                                    {
+                                        <DropdownItem Clicked="() => OpenEditAuthorModal(context)">
+                                            @L["Edit"]
+                                        </DropdownItem>
+                                    }
+                                    @if (CanDeleteAuthor)
+                                    {
+                                        <DropdownItem Clicked="() => DeleteAuthorAsync(context)">
+                                            @L["Delete"]
+                                        </DropdownItem>
+                                    }
+                                </DropdownMenu>
+                            </Dropdown>
+                        </DisplayTemplate>
+                    </DataGridColumn>
+                }
+                
             </DataGridColumns>
         </DataGrid>
     </CardBody>
@@ -99,21 +106,21 @@
                             <FieldLabel>@L["Name"]</FieldLabel>
                             <TextEdit @bind-Text="@NewAuthor.Name">
                                 <Feedback>
-                                    <ValidationError/>
+                                    <ValidationError />
                                 </Feedback>
                             </TextEdit>
                         </Field>
                     </Validation>
                     <Field>
                         <FieldLabel>@L["BirthDate"]</FieldLabel>
-                        <DateEdit TValue="DateTime" @bind-Date="@NewAuthor.BirthDate"/>
+                        <DateEdit TValue="DateTime" @bind-Date="@NewAuthor.BirthDate" />
                     </Field>
                     <Validation MessageLocalizer="@LH.Localize">
                         <Field>
                             <FieldLabel>@L["ShortBio"]</FieldLabel>
                             <MemoEdit Rows="5" @bind-Text="@NewAuthor.ShortBio">
                                 <Feedback>
-                                    <ValidationError/>
+                                    <ValidationError />
                                 </Feedback>
                             </MemoEdit>
                         </Field>
@@ -141,9 +148,9 @@
     <ModalContent IsCentered="true">
         <Form>
             <ModalHeader>
-                        <ModalTitle>@EditingAuthor.Name</ModalTitle>
-                        <CloseButton Clicked="CloseEditAuthorModal" />
-                    </ModalHeader>
+                <ModalTitle>@EditingAuthor.Name</ModalTitle>
+                <CloseButton Clicked="CloseEditAuthorModal" />
+            </ModalHeader>
             <ModalBody>
                 <Validations @ref="@EditValidationsRef" Model="@EditingAuthor" ValidateOnLoad="false">
                     <Validation MessageLocalizer="@LH.Localize">
@@ -151,21 +158,21 @@
                             <FieldLabel>@L["Name"]</FieldLabel>
                             <TextEdit @bind-Text="@EditingAuthor.Name">
                                 <Feedback>
-                                    <ValidationError/>
+                                    <ValidationError />
                                 </Feedback>
                             </TextEdit>
                         </Field>
                     </Validation>
                     <Field>
                         <FieldLabel>@L["BirthDate"]</FieldLabel>
-                        <DateEdit TValue="DateTime" @bind-Date="@EditingAuthor.BirthDate"/>
+                        <DateEdit TValue="DateTime" @bind-Date="@EditingAuthor.BirthDate" />
                     </Field>
                     <Validation>
                         <Field>
                             <FieldLabel>@L["ShortBio"]</FieldLabel>
                             <MemoEdit Rows="5" @bind-Text="@EditingAuthor.ShortBio">
                                 <Feedback>
-                                    <ValidationError/>
+                                    <ValidationError />
                                 </Feedback>
                             </MemoEdit>
                         </Field>

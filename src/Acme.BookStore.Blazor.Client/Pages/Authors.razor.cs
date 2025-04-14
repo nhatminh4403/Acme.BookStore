@@ -19,7 +19,7 @@ namespace Acme.BookStore.Blazor.Client.Pages
         private int CurrentPage { get; set; }
         private string CurrentSorting { get; set; }
         private int TotalCount { get; set; }
-
+        private bool DefaultAuthorView { get; set; }
         private bool CanCreateAuthor { get; set; }
         private bool CanEditAuthor { get; set; }
         private bool CanDeleteAuthor { get; set; }
@@ -51,6 +51,8 @@ namespace Acme.BookStore.Blazor.Client.Pages
 
         private async Task SetPermissionsAsync()
         {
+           DefaultAuthorView = await AuthorizationService
+                .IsGrantedAsync(BookStorePermissions.Authors.Default);
             CanCreateAuthor = await AuthorizationService
                 .IsGrantedAsync(BookStorePermissions.Authors.Create);
 

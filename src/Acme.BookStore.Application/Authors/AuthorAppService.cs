@@ -2,15 +2,13 @@
 using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Domain.Repositories;
 
 namespace Acme.BookStore.Authors
 {
-    [Authorize(BookStorePermissions.Authors.Default)]
+    //[Authorize(BookStorePermissions.Authors.Default)]
     public class AuthorAppService : BookStoreAppService, IAuthorAppService
     {
 
@@ -31,7 +29,7 @@ namespace Acme.BookStore.Authors
             var author = await _authorRepository.GetAsync(id);
             return ObjectMapper.Map<Author, AuthorDto>(author);
         }
-
+        [AllowAnonymous]
         public async Task<PagedResultDto<AuthorDto>> GetListAsync(GetAuthorListDto input)
         {
             if (input.Sorting.IsNullOrWhiteSpace())
